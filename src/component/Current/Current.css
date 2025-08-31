@@ -1,0 +1,110 @@
+.hero{
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  .weather {
+    width: 40vw;
+    border-radius: 24px;
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+    color: #1f1f1f;
+    padding-top: 120px;
+    padding: 0 20px 20px 20px;
+    backdrop-filter: blur(12px);
+    .top,
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title{
+        p{
+          font-family: 'oxygen';
+          line-height: 150%;
+        }
+        .city{
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .weather-description{
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      .weather-icon {
+        width: 100px;
+      }
+      .temperature {
+        font-weight: 600;
+        font-size: 70px;
+        font-family: 'oxygen';
+        letter-spacing: -5px;
+        margin: 10px 0;
+      }     
+      .details {
+        width: 55%;
+        padding-left: 20px;
+        .parameter-row {
+          display: flex;
+          justify-content: space-between;
+          .parameter-label {
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: 'oxygen';
+            line-height: 150%;
+          }
+          .parameter-value {
+            text-align: right;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: 'oxygen';
+            line-height: 150%;
+          }
+          .parameter-label.top{
+            margin-bottom: 10px;
+            font-size: 18px;
+            border-bottom: 1px solid #1f1f1f;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:992px) {
+  .hero{
+    padding-top: 185px;
+    .weather {
+      width: 90vw;
+      .top,
+      .bottom {
+        .title{
+          .city{
+            font-size: 18px;
+          }
+          .weather-description{
+            font-size: 14px;
+          }
+        }
+        .temperature {
+          font-size: 60px;
+        }     
+        .details {
+          width: 31vw;
+          padding-left: 0px;
+          .parameter-row {
+            .parameter-label {
+              font-size: 12px;
+            }
+            .parameter-value {
+              font-size: 12px;
+            }
+            .parameter-label.top{
+              margin-bottom: 5px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }  
+  
+}

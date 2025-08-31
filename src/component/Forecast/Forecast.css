@@ -1,0 +1,156 @@
+.Forecast-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .forcast-title {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'oxygen';
+    margin: 20px auto;
+    color: #1f1f1f;
+  }
+  .forecast-details-container{
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    .forecast-details{
+      width: 100%;
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      .forecast-details-head{
+        border-radius: 16px;
+        .forecast-botton{
+          border-radius: 16px;
+          width: 100%;
+          border: none;
+          background-color: transparent;
+          backdrop-filter: blur(12px);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 15%);
+        }
+      }
+    }
+  }
+
+
+}
+.daily-item{
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  padding: 5px 20px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+  .icon-small {
+    width: 50px;
+  }
+  .day {
+    cursor: inherit;
+    color: #1f1f1f;
+    flex: 1 1;
+    font-weight: 600;
+    margin-left: 15px;
+    font-family: 'oxygen';
+    font-size: 24px;
+  }
+  .description {
+    cursor: inherit;
+    flex: 1 1;
+    margin-right: 15px;
+    text-align: right;
+    font-weight: 600;
+    font-family: 'oxygen';
+    color: #1f1f1f;
+    font-size: 24px;
+  }
+  .min-max {
+    color: #1f1f1f96;
+    font-weight: 600;
+    font-family: 'oxygen';
+    font-size: 18px;
+    letter-spacing: -1px;
+  }
+
+}
+.daily-details-grid {
+  grid-row-gap: 0;
+  grid-column-gap: 15px;
+  -webkit-column-gap: 15px;
+  column-gap: 50px;
+  display: grid;
+  flex: 1 1;
+  grid-template-columns: auto auto;
+  padding: 5px 15px;
+  row-gap: 0;
+  .daily-details-grid-item {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.daily-details-grid-item label:first-child {
+  color: #1f1f1f;
+  font-family: 'oxygen';
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.daily-details-grid-item label:last-child {
+  color: #1f1f1f96;
+  font-family: 'oxygen';
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+@media screen and (max-width:992px) {
+  .Forecast-container{
+    .forcast-title {
+      font-size: 30px;
+    }
+  }
+  .daily-item{
+    .day {
+      margin-left: 0px;
+      font-size: 18px;
+    }
+    .description {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+    .min-max {
+      font-size: 16px;
+    }
+
+  }
+  .daily-details-grid {
+    column-gap: 25px;
+    padding: 5px 10px;
+    .daily-details-grid-item {
+      height: 25px;
+    }
+  }
+  .daily-details-grid-item label:first-child {
+    font-size: 16px;
+  }
+  .daily-details-grid-item label:last-child {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

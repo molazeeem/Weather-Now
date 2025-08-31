@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 915px;
+} */
+.falling-icon {
+  position: fixed;
+  top: -50px;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    top: -50px;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
