@@ -86,7 +86,7 @@ const icons = ["☀️","💧","❄️","☂️"];
 
       <div className="background"
         style={{
-          backgroundImage: `url(/assest/img/${backgroundImage})`,
+          backgroundImage: `url(assest/img/${backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           position: "fixed",
@@ -97,7 +97,7 @@ const icons = ["☀️","💧","❄️","☂️"];
           zIndex: -1,
         }}
       ></div>
-      
+
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}

@@ -28,7 +28,7 @@ const Search = ({ onSearchChange }) => {
 
   const handleOnChange = (searchData) => {
     setSearch(searchData);
-    setInputValue(""); // إعادة تعيين النص بعد الاختيار
+    setInputValue(""); 
     onSearchChange(searchData);
   };
 
@@ -40,7 +40,7 @@ const Search = ({ onSearchChange }) => {
   return (
     <div className="nav">
       <div className="logo">
-        <img src="/assest/img/logo.png" alt="Weather Now logo" />
+        <img src="assest/img/logo.png" alt="Weather Now logo" />
         <p>Weather Now</p>
       </div>
       <AsyncPaginate
