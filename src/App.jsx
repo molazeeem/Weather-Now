@@ -86,7 +86,7 @@ const icons = ["☀️","💧","❄️","☂️"];
 
       <div className="background"
         style={{
-          backgroundImage: `url(assest/img/${backgroundImage})`,
+          backgroundImage: `url(assets/img/${backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           position: "fixed",

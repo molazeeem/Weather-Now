@@ -40,7 +40,7 @@ const Search = ({ onSearchChange }) => {
   return (
     <div className="nav">
       <div className="logo">
-        <img src="assest/img/logo.png" alt="Weather Now logo" />
+        <img src="assets/img/logo.png" alt="Weather Now logo" />
         <p>Weather Now</p>
       </div>
       <AsyncPaginate
